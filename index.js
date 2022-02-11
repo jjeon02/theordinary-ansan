@@ -4,11 +4,12 @@
   }
 
 //NAVIGATION
-function openNav() {
-  document.getElementById("sideNav").style.width= "100%";
-}
+window.onscroll = function() {scrollFunction()};
 
-function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.background= rgba(255,255,255,0);
+  } else {
+    document.getElementById("navbar").style.background= rgba(255,255,255,1);
+  }
 }
-   
