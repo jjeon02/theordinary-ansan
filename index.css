@@ -1,11 +1,18 @@
+/* SCROLLBAR */
 ::-webkit-scrollbar {display:none;}
+/* ::-webkit-scrollbar {width:.6em;}
+::-webkit-scrollbar-track {background: var(--lightGreen);border-left: 1px solid var(--darkGreen)}
+::-webkit-scrollbar-thumb {background-color: var(--background); border-radius: 6px;} */
 
 /* COLOR */
 :root {
     --background: #ffffff;
-    --lightGrey: #dddddd;
-    --lightblue: #C6E6FD;
-    --turquoise:#00816E;
+    --yellow:#fff0a7;
+    --lightblue: #abc8e7;
+    --lightGreen: #e6ecea;
+    --middleGreen: #bacac5;
+    --green: #799990;
+    --darkGreen:#235b42;
     --black: #111111;
 }
 
@@ -13,6 +20,8 @@
 *{margin: 0;padding:0;box-sizing:border-box;scroll-behavior:smooth;outline:none;}
 html{overflow-y: auto;}
 body{margin:0; position:relative;left:0;right:0;background-color:var(--background);}
+
+img{width:100%;}
 
 #navbar{
     width:100%;
@@ -32,13 +41,25 @@ section{
 
 .map{
     width:100%;
-    background:var( --turquoise);
+    background:var( --darkGreen);
 }
 
-.border{
-    width:100%;
-    border: 1px dashed var( --turquoise);
+footer{
+    background-color: #111111;
 }
+
+footer section > p, footer section > p > a { 
+    color: white;
+}
+
+.border{width:100%;}
+@media screen and (max-width:600px){
+    .border{
+        width:200%;
+        overflow: hidden;
+    }
+}
+
 
 /* TYPOGRAPHY */
 @font-face {
@@ -48,10 +69,11 @@ section{
 
 h1,h2,h6, p,.box{ font-family: 'Noto Sans KR', sans-serif;}
 .center{text-align: center;}
+a{color:var(--black);}
 
 h1{font-size: 3em; line-height: 1.2;font-weight: 800;} /* title */
 h2{font-size: 2em; line-height: 1.6;font-weight: 400;} /* Callout */
-h6{font-size:1.2em;line-height: 1.8;font-weight: 400;color:var(--turquoise);}
+h6{font-size:1.2em;line-height: 1.8;font-weight: 400;color:var(--darkGreen);}
 p{font-size:1.2em;line-height: 1.8;font-weight: 400; color:var(--black);margin: 1em 0;display:block;}
 
 p > strong{
