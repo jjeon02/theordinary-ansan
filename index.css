@@ -19,6 +19,7 @@
 html{overflow-y: auto;}
 body{
     left:0;right:0;background-color:var(--background);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 img{width:100%;}
@@ -48,16 +49,46 @@ section{
     background-size: auto 100%;
     background-attachment: fixed;
     background-image:url(illusts/map_2.jpg);
+    position:absolute;
+}
+
+.map > div{
+    position:relative;
+    top:48vh;
+    width:100%;
+    max-width:1080px;
+    margin: 0 auto;
+    padding: 24px;
 }
 
 @media screen and (max-width:600px){
     .map{
         width:100%;
-        height:30vw;
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-position:top;
     }
 }
+
+.infographic-wrapper{
+    width:100%;
+    background-color: var(--yellow);
+}
+
+.infographic{
+    width:72%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 70% auto;
+    grid-gap: 1em;
+    padding: 2em;
+}
+
+.infographic > img {
+    display:inline-block;
+}
+
+.infographic > div {font-size:1em;}
+.infographic > div > strong {font-size:2em;font-weight:600;}
 
 .next-story{ 
     width:100%;
@@ -73,10 +104,10 @@ section{
 .thumbnail{
     display:inline-block;
     width:100%;
-    background-color: var(--middlegrey);
 }
 
 .thumbnail> p{ margin:2em;}
+
 
 @media screen and (max-width:600px){
     .thumbnail-wrapper{
@@ -93,7 +124,7 @@ footer{
     padding-bottom: 2em;
 }
 
-footer section > p, footer section > p > a { 
+footer section > p, footer section > p strong, footer section > p > a { 
     color: white;
 }
 
@@ -116,7 +147,7 @@ footer section > p, footer section > p > a {
     src: url("Noto_Sans_KR/NotoSansKR-Black.otf"), url("Noto_Sans_KR/NotoSansKR-Bold.otf"), url("Noto_Sans_KR/NotoSansKR-Light.otf"), url("Noto_Sans_KR/NotoSansKR-Medium.otf"), url("Noto_Sans_KR/NotoSansKR-Regular.otf"), url("Noto_Sans_KR/NotoSansKR-Thin.otf");
 }
 
-h1,h2,.callout,h6, p,.box,.caption{ font-family: 'Noto Sans KR', sans-serif;}
+/* h1,.callout,h6, p,.box,.caption{ font-family: 'Noto Sans KR', sans-serif;} */
 .center{text-align: center;}
 a{color:var(--black);}
 
@@ -140,7 +171,6 @@ p > span{width:100%;}
 
 @media screen and (max-width:600px){
     h1{font-size:2em;}
-    h2{font-size: 1.6em;}
     h6,p{font-size:1.1em;}
     .caption{font-size:1em;}
 }
