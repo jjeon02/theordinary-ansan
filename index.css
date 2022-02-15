@@ -193,10 +193,10 @@ footer > section > .thumbnail-wrapper > .thumbnail > p > strong, footer > sectio
 .center{text-align: center;}
 a{color:var(--black);}
 
-h1{font-size: 3em; line-height: 1.2;font-weight: 800; text-align:center} /* title */
+h1{font-size: 3em; line-height: 1.2;font-weight: 900; text-align:center} /* title */
 
 .callout{
-    font-size: 1.8em; line-height: 1.6;font-weight: 600;
+    font-size: 1.8em; line-height: 1.6;font-weight: 700;
     background-color:var(--yellow);
     margin: 0 auto;
 } 
@@ -209,7 +209,7 @@ p, .caption, button{line-height: 1.8;display:block;}
 button{font-size:1em;}
 p{font-size:1.2em;margin: 1em 0;font-weight: 400;}
 .caption{font-size:1em;}
-p > strong, h6{font-weight: 600;margin-right:.8em; color: var(--black);}
+p > strong, h6{font-weight: 700;margin-right:.8em; color: var(--black);}
 p > span{width:100%;}
 
 @media screen and (max-width:600px){
@@ -221,7 +221,7 @@ p > span{width:100%;}
 .box{
     width:100%;
     max-width:600px;
-    font-weight: 600;
+    font-weight: 700;
     padding:1.2em;
     margin: 0 auto 2em auto;
     display:block;
