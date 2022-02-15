@@ -1,9 +1,9 @@
 /* SCROLLBAR */
 ::selection {background:rgba(0,0,0,.1);}
-::-webkit-scrollbar {display:none;}
-/* ::-webkit-scrollbar {width:.6em;}
-::-webkit-scrollbar-track {background: var(--middlegrey);border-left: 1px solid var(--darkGreen)}
-::-webkit-scrollbar-thumb {background-color: var(--background); border-radius: 6px;} */
+::-webkit-scrollbar {width:.6em;}
+::-webkit-scrollbar-track {background: var(--middlegrey);}
+::-webkit-scrollbar-thumb {background-color: var(--darkgrey); border-radius: 6px;}
+@media screen and (max-width:600px){ ::-webkit-scrollbar {display:none;}}
 
 /* COLOR */
 :root {
@@ -23,6 +23,13 @@ body{
 }
 
 img{width:100%;}
+
+.wongok{
+    width:100px;
+    margin:0 auto;
+    display:block;
+}
+
 .photo{
     max-width:600px;
     display:block;
@@ -55,7 +62,7 @@ button{color: var(--black);}
     background-position: center;
     background-size: auto 100%;
     background-attachment: fixed;
-    background-image:url(illusts/map_2.jpg);
+    background-image:url(illusts/map_bg.png);
     position:absolute;
 }
 
@@ -96,7 +103,6 @@ button{color: var(--black);}
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: .6em;
-   
 }
 
 .info-border{ 
