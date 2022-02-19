@@ -61,7 +61,7 @@ button{color: var(--black);}
     margin-top: 1.2em;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-image:url(illusts/map_bg.png);
     -moz-background-image:url(illusts/map_bg.png);
     position:absolute;
