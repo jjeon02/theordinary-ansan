@@ -51,6 +51,7 @@ section{
     margin: 0 auto;
     padding: 24px;
     display:block;
+    background: var(--background);
 }
 
 button{color: var(--black);}
