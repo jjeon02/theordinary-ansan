@@ -80,8 +80,13 @@ button{color: var(--black);}
 @media screen and (max-width:600px){
     .map{
         width:100%;
-        background-size: auto 100%;
-        background-position:top;
+        height:72vh;
+        margin-top: 1.2em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-image:url(illusts/map_bg.png);
+        position:absolute;
     }
 }
 
