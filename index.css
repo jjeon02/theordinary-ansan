@@ -61,8 +61,6 @@ button{color: var(--black);}
     margin-top: 1.2em;
     background-image:url(illusts/map_bg.png) no-repeat center;
     -moz-background-image:url(illusts/map_bg.png);
-    /* background-repeat: no-repeat;
-    background-position: center; */
     /* background-attachment: fixed; */
     position:absolute;
     -webkit-background-size:  auto 100%;
