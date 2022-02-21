@@ -44,8 +44,6 @@ img{width:100%;}
     background: var(--background);
     z-index:4;
     top:0;
-    /* Temporary */
-    border-bottom:1px solid var(--black);
 }
 
 .map{
@@ -56,12 +54,10 @@ img{width:100%;}
     background-image:url(illusts/map_main.png);
     background-size: auto 100%;
     background-position: center;
-    /* background-image:url("map_bg.jpg") no-repeat center;
-    -moz-background-image:url("map_bg.jpg") no-repeat center;
-    -webkit-background-size:  auto 100%; 
+    /* -webkit-background-size:  auto 100%; 
 	-moz-background-size: auto 100%;
 	-o-background-size:  auto 100%;
-	background-size:  auto 100%; */
+	background-size:  auto 100%;  */
     z-index: -3;
 }
 
